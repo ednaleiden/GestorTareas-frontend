@@ -1,1 +1,21 @@
-<p>tarea-list works!</p>
+<div class="container mt-3">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>Descripcion</th>
+        <th>Completado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let tarea of tareas">
+        <tr>
+          <td>{{tarea.id}}</td>
+          <td>{{tarea.titulo}}</td>
+          <td>{{tarea.descripcion}}</td>
+
+        </tr>
+    </tbody>
+  </table>
+</div>
