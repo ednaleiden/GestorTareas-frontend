@@ -14,7 +14,10 @@
           <td>{{tarea.id}}</td>
           <td>{{tarea.titulo}}</td>
           <td>{{tarea.descripcion}}</td>
-
+          <td><input type="checkbox" [checked]="tarea.completado" disabled></td>
+          <td>
+            <button class="btn btn-sm btn-danger" (click)="eliminarTarea(tarea.id)">Eliminar</button>
+          </td>
         </tr>
     </tbody>
   </table>
