@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { Tarea } from '../../models/tarea';
 import { TareaService } from '../../services/tarea.service';
 import { NgFor } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tarea-list',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor,RouterLink],
   templateUrl: './tarea-list.component.html',
   styleUrl: './tarea-list.component.css'
 })
